@@ -15,6 +15,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	background-position: center;
 	background-size: cover;
 	height:100vh;
+	margin-top: -20px;
 }
 .blanc {
 	background-color: rgba(223, 223, 223, 0.8);
@@ -24,5 +25,12 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	height: 100px;
 }
 
-
-
+/** Mission
+ */
+.mission {
+	background: url(../img/mission.jpg);
+	background-position: center;
+	background-size: cover;
+	height:100vh;
+	margin-top: -20px;
+}

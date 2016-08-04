@@ -315,6 +315,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle:Registration:register',  '_route' => 'user_register',);
         }
 
+        // mission
+        if ($pathinfo === '/mission') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::missionAction',  '_route' => 'mission',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

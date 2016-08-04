@@ -24,4 +24,11 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('default/home.html.twig');
     }
+
+    public function missionAction(Request $request)
+    {
+        
+
+        return $this->render('default/mission.html.twig');
+    }
 }
