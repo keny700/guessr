@@ -57,11 +57,14 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
  	border:solid green 2px;
  }
  .tableau {
- 	height: 500px;
+ 	height: 400px;
  	border:solid green 2px;
  }
- #map, #pano {
+ #map {
+	height: 200px;
+ }
+ #pano {
         float: left;
-        height: 100%;
-        width: 45%;
+        height: 600px;
+        width: 100%;
       }
