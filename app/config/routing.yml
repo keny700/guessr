@@ -6,3 +6,7 @@ app:
 # app/config/routing.yml
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+home:
+    path:     /home
+    defaults: { _controller: AppBundle:Default:home }

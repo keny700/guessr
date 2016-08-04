@@ -18,4 +18,10 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
         ));
     }
+
+    public function homeAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/home.html.twig');
+    }
 }
