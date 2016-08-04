@@ -43,7 +43,10 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 }
 /** Map
  */
-
+.map {
+	margin-top: -20px;
+	margin-right: -45px;
+}
  .carte {
  	height: 200px;
  	border:solid green 2px;
