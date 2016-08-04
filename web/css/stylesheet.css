@@ -47,6 +47,11 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	margin-top: -20px;
 	margin-right: -45px;
 }
+.street {
+	height: 100%;
+	margin: 0;
+    padding: 0;
+}
  .carte {
  	height: 200px;
  	border:solid green 2px;
@@ -55,3 +60,8 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
  	height: 500px;
  	border:solid green 2px;
  }
+ #map, #pano {
+        float: left;
+        height: 100%;
+        width: 45%;
+      }

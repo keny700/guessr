@@ -190,3 +190,16 @@ f0654d,::1,GET,http://localhost/guessr/web/app_dev.php/,1470320421,b0cb0d,200
 b0cb0d,::1,GET,http://localhost/guessr/web/app_dev.php/,1470320421,,500
 f0aa3b,::1,GET,http://localhost/guessr/web/app_dev.php/home,1470320422,,200
 17eb91,::1,GET,http://localhost/guessr/web/app_dev.php/home,1470320423,,200
+e7abb0,::1,GET,http://localhost/guessr/web/app_dev.php/home,1470320510,,200
+473645,::1,GET,http://localhost/guessr/web/app_dev.php/,1470320717,7b575f,200
+7b575f,::1,GET,http://localhost/guessr/web/app_dev.php/,1470320717,,500
+1a45ec,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320717,,200
+4fc39f,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320718,,200
+ebce41,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320719,,200
+037403,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320719,,200
+b6cec0,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320730,,200
+09d045,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320761,,200
+6467a3,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320769,,200
+8354e0,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320798,,200
+14951b,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320933,,200
+e7dc07,::1,GET,http://localhost/guessr/web/app_dev.php/map,1470320938,,200
