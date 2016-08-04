@@ -8,7 +8,21 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
  */
 
 
-
+/** Index
+ */
+.rambo {
+	background: url(../img/mission.jpg);
+	background-position: center;
+	background-size: cover;
+	height:100vh;
+}
+.blanc {
+	background-color: rgba(223, 223, 223, 0.8);
+	border-radius: 5px;
+}
+.vide {
+	height: 100px;
+}
 
 
 

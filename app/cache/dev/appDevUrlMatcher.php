@@ -105,6 +105,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // user_login
+        if ($pathinfo === '/login') {
+            return array (  '_controller' => 'AppBundle\\Controller\\SecurityController::loginAction',  '_route' => 'user_login',);
+        }
+
         // homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
@@ -303,6 +308,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // home
         if ($pathinfo === '/home') {
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::homeAction',  '_route' => 'home',);
+        }
+
+        // user_register
+        if ($pathinfo === '/register') {
+            return array (  '_controller' => 'AppBundle:Registration:register',  '_route' => 'user_register',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
