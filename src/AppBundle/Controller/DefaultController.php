@@ -31,4 +31,10 @@ class DefaultController extends Controller
 
         return $this->render('default/mission.html.twig');
     }
+    public function mapAction(Request $request)
+    {
+        
+
+        return $this->render('default/map.html.twig');
+    }
 }

@@ -24,3 +24,7 @@ mission:
     path:     /mission
     defaults: { _controller: AppBundle:Default:mission }
 
+map:
+    path:     /map
+    defaults: { _controller: AppBundle:Default:map }
+

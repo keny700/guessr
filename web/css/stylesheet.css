@@ -28,9 +28,27 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 /** Mission
  */
 .mission {
-	background: url(../img/mission.jpg);
+	background: url(../img/mission1.jpg);
 	background-position: center;
 	background-size: cover;
 	height:100vh;
 	margin-top: -20px;
 }
+.theme {
+	border:solid green 2px;
+	height: 300px;
+}
+.espace {
+	height: 100px;
+}
+/** Map
+ */
+
+ .carte {
+ 	height: 200px;
+ 	border:solid green 2px;
+ }
+ .tableau {
+ 	height: 500px;
+ 	border:solid green 2px;
+ }
