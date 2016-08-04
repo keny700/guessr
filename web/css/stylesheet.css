@@ -3,10 +3,42 @@ font-family: 'Glyphicons Halflings';
 src: url('../fonts/glyphicons-halflings-regular.eot');
 src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
-
-/** Home page
+/** navbar
  */
 
+ .navbar{
+ 	margin-bottom:0px;
+ }
+/** Home page
+ */
+ html, body{
+	height:100%;
+}
+.page_choix_missions{
+	padding-top:40px;
+	background-image: url(../img/aventurier1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	height:100%;
+}
+
+.page_choix_missions h1{
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:50px;
+
+}
+
+.container-fluid{
+	margin: 0px;
+}
+
+.mission_block{
+	height: 150px;
+	border: black 1px solid;
+	margin-bottom:20px;
+	background-color: #F1F1F1;
+}
 
 /** Index
  */
@@ -15,7 +47,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	background-position: center;
 	background-size: cover;
 	height:100vh;
-	margin-top: -20px;
+	
 }
 .blanc {
 	background-color: rgba(223, 223, 223, 0.8);
@@ -32,7 +64,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	background-position: center;
 	background-size: cover;
 	height:100vh;
-	margin-top: -20px;
+	
 }
 .theme {
 	border:solid green 2px;
@@ -44,7 +76,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 /** Map
  */
 .map {
-	margin-top: -20px;
+	background-color: grey;
 	margin-right: -45px;
 }
 .street {
