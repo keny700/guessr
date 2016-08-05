@@ -316,14 +316,50 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/m')) {
-            // mission
-            if ($pathinfo === '/mission') {
-                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::missionAction',  '_route' => 'mission',);
+            if (0 === strpos($pathinfo, '/mission')) {
+                // mission1
+                if ($pathinfo === '/mission1') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::mission1Action',  '_route' => 'mission1',);
+                }
+
+                // mission2
+                if ($pathinfo === '/mission2') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::mission2Action',  '_route' => 'mission2',);
+                }
+
+                // mission3
+                if ($pathinfo === '/mission3') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::mission3Action',  '_route' => 'mission3',);
+                }
+
+                // mission4
+                if ($pathinfo === '/mission4') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::mission4Action',  '_route' => 'mission4',);
+                }
+
             }
 
-            // map
-            if ($pathinfo === '/map') {
-                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::mapAction',  '_route' => 'map',);
+            if (0 === strpos($pathinfo, '/map')) {
+                // map1
+                if ($pathinfo === '/map1') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::map1Action',  '_route' => 'map1',);
+                }
+
+                // map2
+                if ($pathinfo === '/map2') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::map2Action',  '_route' => 'map2',);
+                }
+
+                // map3
+                if ($pathinfo === '/map3') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::map3Action',  '_route' => 'map3',);
+                }
+
+                // map4
+                if ($pathinfo === '/map4') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::map4Action',  '_route' => 'map4',);
+                }
+
             }
 
         }

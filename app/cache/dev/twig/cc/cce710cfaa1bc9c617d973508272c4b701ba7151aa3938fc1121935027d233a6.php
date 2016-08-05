@@ -11,13 +11,14 @@ class __TwigTemplate_9caba4f140d97c75d4ed5908fc1336b50e864c5579018513f02d4e9afbf
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
+            'body' => array($this, 'block_body'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3379d68f19fe461a5737ecec3e2fd401cd0b3546bc224fdc69ae9800540091a9 = $this->env->getExtension("native_profiler");
-        $__internal_3379d68f19fe461a5737ecec3e2fd401cd0b3546bc224fdc69ae9800540091a9->enter($__internal_3379d68f19fe461a5737ecec3e2fd401cd0b3546bc224fdc69ae9800540091a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/login.html.twig"));
+        $__internal_e2098760b1d40001926692ec722b52f3fe39f6e2f74edd461fc4ec9ff32b9d0c = $this->env->getExtension("native_profiler");
+        $__internal_e2098760b1d40001926692ec722b52f3fe39f6e2f74edd461fc4ec9ff32b9d0c->enter($__internal_e2098760b1d40001926692ec722b52f3fe39f6e2f74edd461fc4ec9ff32b9d0c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/login.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -57,8 +58,36 @@ class __TwigTemplate_9caba4f140d97c75d4ed5908fc1336b50e864c5579018513f02d4e9afbf
 ";
         // line 15
         echo "
-    <body>
-        <div class=\"container-fluid rambo\">
+    ";
+        // line 16
+        $this->displayBlock('body', $context, $blocks);
+        // line 76
+        echo "</html>";
+        
+        $__internal_e2098760b1d40001926692ec722b52f3fe39f6e2f74edd461fc4ec9ff32b9d0c->leave($__internal_e2098760b1d40001926692ec722b52f3fe39f6e2f74edd461fc4ec9ff32b9d0c_prof);
+
+    }
+
+    // line 5
+    public function block_title($context, array $blocks = array())
+    {
+        $__internal_c2df80d553e116749c69ee9325513f9a4531f2e2817cda8d009739aaca0fd55e = $this->env->getExtension("native_profiler");
+        $__internal_c2df80d553e116749c69ee9325513f9a4531f2e2817cda8d009739aaca0fd55e->enter($__internal_c2df80d553e116749c69ee9325513f9a4531f2e2817cda8d009739aaca0fd55e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+
+        echo "Guessr";
+        
+        $__internal_c2df80d553e116749c69ee9325513f9a4531f2e2817cda8d009739aaca0fd55e->leave($__internal_c2df80d553e116749c69ee9325513f9a4531f2e2817cda8d009739aaca0fd55e_prof);
+
+    }
+
+    // line 16
+    public function block_body($context, array $blocks = array())
+    {
+        $__internal_d23b4aabad22f32f8c848a7680ece7ec4df063a0ce222979d9212c397a94a445 = $this->env->getExtension("native_profiler");
+        $__internal_d23b4aabad22f32f8c848a7680ece7ec4df063a0ce222979d9212c397a94a445->enter($__internal_d23b4aabad22f32f8c848a7680ece7ec4df063a0ce222979d9212c397a94a445_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        // line 17
+        echo "        <div class=\"container-fluid rambo\">
             <div class=\"col-md-12 vide\"></div>
             <div class=\"col-md-12\">
                 
@@ -81,73 +110,74 @@ class __TwigTemplate_9caba4f140d97c75d4ed5908fc1336b50e864c5579018513f02d4e9afbf
                 <div>
                     <form action=\"";
         // line 31
-        echo $this->env->getExtension('routing')->getPath("user_login");
+        echo $this->env->getExtension('routing')->getPath("fos_user_security_check");
         echo "\" method=\"post\">
                         <input type=\"hidden\" name=\"_csrf_token\" value=\"";
         // line 32
         echo twig_escape_filter($this->env, (isset($context["csrf_token"]) ? $context["csrf_token"] : $this->getContext($context, "csrf_token")), "html", null, true);
         echo "\" />
-                        <div class=\"col-md-12\">
-                            <div class=\"col-md-6\">
-                                <label for=\"username\"><span>Pseudo :</span></label>
-                            </div>
-                            <div class=\"col-md-6\">
-                                <input class=\"champ-log\" type=\"text\" id=\"username\" name=\"_username\" value=\"";
+                        <div class=\"row\">
+        <div class=\"col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8\">
+            <label for=\"username\">";
+        // line 35
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.username", array(), "FOSUserBundle"), "html", null, true);
+        echo "</label>
+            <div class=\"input-group\">
+                <span class=\"input-group-addon\"><i class=\"glyphicon glyphicon-user\"></i></span>
+                <input class=\"form-control\" type=\"text\" id=\"username\" name=\"_username\" value=\"";
         // line 38
         echo twig_escape_filter($this->env, (isset($context["last_username"]) ? $context["last_username"] : $this->getContext($context, "last_username")), "html", null, true);
-        echo "\" required=\"required\" />
-                            </div>
-                        </div>
-                        <div class\"col-md-12\">
-                            <div class=\"col-md-6\">
-                                <label for=\"password\"><span>Mot de Passe :</span></label>
-                            </div>
-                            <div class=\"col-md-6\">
-                                <input class=\"champ-log\" type=\"password\" id=\"password\" name=\"_password\" required=\"required\" />
-                            </div>
-                        </div>
-                        <div class=\"col-md-12\">
-                            
-                            <div class=\"col-md-6\">
-                                <label for=\"remember_me\"><span>Se souvenir de moi :</span></label>
-                            </div>
-                            <div class=\"col-md-5\">
-                                <input type=\"checkbox\" id=\"remember_me\" name=\"_remember_me\" value=\"on\" />
-                            </div>
-                        </div>
-                        <div class=\"col-md-12\">
-                            <div class=\"col-md-8\"></div>
-                            <div class=\"col-md-4\">
-                                <input type=\"submit\" class=\"btnlogin\" id=\"_submit\" name=\"_submit\" value=\"Envoyer\" />
-                            </div>
-                        </div>
-                        <div class=\"col-md-12\">
-                            <p>Nouveau ?<a href=\"";
-        // line 65
-        echo $this->env->getExtension('routing')->getPath("user_register");
-        echo "\">
-                                    <input type=\"submit\" class=\"btnlogin\" id=\"_submit\" name=\"_submit\" value=\"Inscription\" />
-                                </a></p> 
-                        </div>
-                    </form>
-                </div>
+        echo "\" required=\"required\" placeholder=\"Username\"/>
+            </div>
         </div>
-    </body>
-</html>";
+    </div>
+    <br>
+
+    <div class=\"row\">
+        <div class=\"col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8\">
+            <label for=\"password\">";
+        // line 46
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.password", array(), "FOSUserBundle"), "html", null, true);
+        echo "</label>
+            <div class=\"input-group\">
+                <span class=\"input-group-addon\"><i class=\"glyphicon glyphicon-lock\"></i></span>
+                <input class=\"form-control\" type=\"password\" id=\"password\" name=\"_password\" required=\"required\" placeholder=\"Mot de passe\">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class=\"row\">
+        <div class=\"col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8\">
+            <div class=\"input-group\">
+                <span class=\"input-group-addon\">
+                <input type=\"checkbox\" id=\"remember_me\" name=\"_remember_me\" value=\"on\" />
+                </span>
+                <label class=\"remember-me form-group\" for=\"remember_me\">";
+        // line 61
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.remember_me", array(), "FOSUserBundle"), "html", null, true);
+        echo "</label>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class=\"row\">
+        <div class=\"col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8\">
+            <input class=\"login btn-primary btn-lg\" type=\"submit\" id=\"_submit\" name=\"_submit\" value=";
+        // line 69
+        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.submit", array(), "FOSUserBundle"), "html", null, true);
+        echo " /><a href=\"";
+        echo $this->env->getExtension('routing')->getPath("user_register");
+        echo "\"><button type=\"button\" class=\"btn btn-primary\">Rejoins nous !</button></a>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+";
         
-        $__internal_3379d68f19fe461a5737ecec3e2fd401cd0b3546bc224fdc69ae9800540091a9->leave($__internal_3379d68f19fe461a5737ecec3e2fd401cd0b3546bc224fdc69ae9800540091a9_prof);
-
-    }
-
-    // line 5
-    public function block_title($context, array $blocks = array())
-    {
-        $__internal_2a6e345199e3c7c2a46f1a479b63e03b20abb76ce871cfd9fbde4b03c3dba06b = $this->env->getExtension("native_profiler");
-        $__internal_2a6e345199e3c7c2a46f1a479b63e03b20abb76ce871cfd9fbde4b03c3dba06b->enter($__internal_2a6e345199e3c7c2a46f1a479b63e03b20abb76ce871cfd9fbde4b03c3dba06b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        echo "Guessr";
-        
-        $__internal_2a6e345199e3c7c2a46f1a479b63e03b20abb76ce871cfd9fbde4b03c3dba06b->leave($__internal_2a6e345199e3c7c2a46f1a479b63e03b20abb76ce871cfd9fbde4b03c3dba06b_prof);
+        $__internal_d23b4aabad22f32f8c848a7680ece7ec4df063a0ce222979d9212c397a94a445->leave($__internal_d23b4aabad22f32f8c848a7680ece7ec4df063a0ce222979d9212c397a94a445_prof);
 
     }
 
@@ -163,7 +193,7 @@ class __TwigTemplate_9caba4f140d97c75d4ed5908fc1336b50e864c5579018513f02d4e9afbf
 
     public function getDebugInfo()
     {
-        return array (  143 => 5,  127 => 65,  97 => 38,  88 => 32,  84 => 31,  80 => 29,  74 => 27,  72 => 26,  59 => 15,  53 => 11,  49 => 10,  45 => 9,  41 => 8,  37 => 7,  33 => 6,  29 => 5,  23 => 1,);
+        return array (  169 => 69,  158 => 61,  140 => 46,  129 => 38,  123 => 35,  117 => 32,  113 => 31,  109 => 29,  103 => 27,  101 => 26,  90 => 17,  84 => 16,  72 => 5,  65 => 76,  63 => 16,  60 => 15,  54 => 11,  50 => 10,  46 => 9,  42 => 8,  38 => 7,  34 => 6,  30 => 5,  24 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -181,7 +211,7 @@ class __TwigTemplate_9caba4f140d97c75d4ed5908fc1336b50e864c5579018513f02d4e9afbf
 /* */
 /* {% trans_default_domain 'FOSUserBundle' %}*/
 /* */
-/*     <body>*/
+/*     {% block body %}*/
 /*         <div class="container-fluid rambo">*/
 /*             <div class="col-md-12 vide"></div>*/
 /*             <div class="col-md-12">*/
@@ -196,46 +226,49 @@ class __TwigTemplate_9caba4f140d97c75d4ed5908fc1336b50e864c5579018513f02d4e9afbf
 /*                         {% endif %}*/
 /*                     </div>*/
 /*                 <div>*/
-/*                     <form action="{{ path("user_login") }}" method="post">*/
+/*                     <form action="{{ path("fos_user_security_check") }}" method="post">*/
 /*                         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />*/
-/*                         <div class="col-md-12">*/
-/*                             <div class="col-md-6">*/
-/*                                 <label for="username"><span>Pseudo :</span></label>*/
-/*                             </div>*/
-/*                             <div class="col-md-6">*/
-/*                                 <input class="champ-log" type="text" id="username" name="_username" value="{{ last_username }}" required="required" />*/
-/*                             </div>*/
-/*                         </div>*/
-/*                         <div class"col-md-12">*/
-/*                             <div class="col-md-6">*/
-/*                                 <label for="password"><span>Mot de Passe :</span></label>*/
-/*                             </div>*/
-/*                             <div class="col-md-6">*/
-/*                                 <input class="champ-log" type="password" id="password" name="_password" required="required" />*/
-/*                             </div>*/
-/*                         </div>*/
-/*                         <div class="col-md-12">*/
-/*                             */
-/*                             <div class="col-md-6">*/
-/*                                 <label for="remember_me"><span>Se souvenir de moi :</span></label>*/
-/*                             </div>*/
-/*                             <div class="col-md-5">*/
-/*                                 <input type="checkbox" id="remember_me" name="_remember_me" value="on" />*/
-/*                             </div>*/
-/*                         </div>*/
-/*                         <div class="col-md-12">*/
-/*                             <div class="col-md-8"></div>*/
-/*                             <div class="col-md-4">*/
-/*                                 <input type="submit" class="btnlogin" id="_submit" name="_submit" value="Envoyer" />*/
-/*                             </div>*/
-/*                         </div>*/
-/*                         <div class="col-md-12">*/
-/*                             <p>Nouveau ?<a href="{{ path('user_register') }}">*/
-/*                                     <input type="submit" class="btnlogin" id="_submit" name="_submit" value="Inscription" />*/
-/*                                 </a></p> */
-/*                         </div>*/
-/*                     </form>*/
-/*                 </div>*/
+/*                         <div class="row">*/
+/*         <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">*/
+/*             <label for="username">{{ 'security.login.username'|trans }}</label>*/
+/*             <div class="input-group">*/
+/*                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>*/
+/*                 <input class="form-control" type="text" id="username" name="_username" value="{{ last_username }}" required="required" placeholder="Username"/>*/
+/*             </div>*/
 /*         </div>*/
-/*     </body>*/
+/*     </div>*/
+/*     <br>*/
+/* */
+/*     <div class="row">*/
+/*         <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">*/
+/*             <label for="password">{{ 'security.login.password'|trans }}</label>*/
+/*             <div class="input-group">*/
+/*                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>*/
+/*                 <input class="form-control" type="password" id="password" name="_password" required="required" placeholder="Mot de passe">*/
+/*             </div>*/
+/*         </div>*/
+/*     </div>*/
+/*     <br>*/
+/* */
+/*     <div class="row">*/
+/*         <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">*/
+/*             <div class="input-group">*/
+/*                 <span class="input-group-addon">*/
+/*                 <input type="checkbox" id="remember_me" name="_remember_me" value="on" />*/
+/*                 </span>*/
+/*                 <label class="remember-me form-group" for="remember_me">{{ 'security.login.remember_me'|trans }}</label>*/
+/*             </div>*/
+/* */
+/*         </div>*/
+/*     </div>*/
+/*     <br>*/
+/*     <div class="row">*/
+/*         <div class="col-lg-offset-2 col-md-offset-2 col-lg-8 col-md-8">*/
+/*             <input class="login btn-primary btn-lg" type="submit" id="_submit" name="_submit" value={{ 'security.login.submit'|trans }} /><a href="{{ path('user_register') }}"><button type="button" class="btn btn-primary">Rejoins nous !</button></a>*/
+/*         </div>*/
+/*     </div>*/
+/* </form>*/
+/* </div>*/
+/* </div>*/
+/* {% endblock %}*/
 /* </html>*/

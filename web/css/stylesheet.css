@@ -3,6 +3,10 @@ font-family: 'Glyphicons Halflings';
 src: url('../fonts/glyphicons-halflings-regular.eot');
 src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
+@font-face {
+    font-family: 'Chrono'; 
+    src: url('Open_24.ttf');
+}
 /** navbar
  */
 
@@ -16,7 +20,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 }
 .page_choix_missions{
 	padding-top:40px;
-	background-image: url(../img/aventurier1.jpg);
+	background-image: url(../img/aventurier3.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
 	height:100%;
@@ -26,18 +30,23 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	text-align:center;
 	margin-top:0px;
 	margin-bottom:50px;
-
+	color: black;
 }
-
+.vide1 {
+	height: 80px;
+}
 .container-fluid{
 	margin: 0px;
 }
 
 .mission_block{
 	height: 150px;
-	border: black 1px solid;
+	border: black 3px solid;
+	border-radius: 5px;
 	margin-bottom:20px;
+	padding-left: 0px;
 	background-color: #F1F1F1;
+	
 }
 
 /** Index
@@ -54,7 +63,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	border-radius: 5px;
 }
 .vide {
-	height: 100px;
+	height: 200px;
 }
 
 /** Mission
@@ -68,6 +77,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 }
 .theme {
 	border:solid green 2px;
+	border-radius: 5px;
 	height: 300px;
 }
 .espace {
@@ -76,7 +86,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 /** Map
  */
 .map {
-	background-color: grey;
+	background-color: rgb(227, 227, 227);
 	margin-right: -45px;
 }
 .street {

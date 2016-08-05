@@ -20,11 +20,35 @@ user_register:
     path:     /register
     defaults: { _controller: AppBundle:Registration:register }
 
-mission:
-    path:     /mission
-    defaults: { _controller: AppBundle:Default:mission }
+mission1:
+    path:     /mission1
+    defaults: { _controller: AppBundle:Default:mission1 }
 
-map:
-    path:     /map
-    defaults: { _controller: AppBundle:Default:map }
+mission2:
+    path:     /mission2
+    defaults: { _controller: AppBundle:Default:mission2 }
+
+mission3:
+    path:     /mission3
+    defaults: { _controller: AppBundle:Default:mission3 }
+
+mission4:
+    path:     /mission4
+    defaults: { _controller: AppBundle:Default:mission4 }
+
+map1:
+    path:     /map1
+    defaults: { _controller: AppBundle:Default:map1 }
+
+map2:
+    path:     /map2
+    defaults: { _controller: AppBundle:Default:map2 }
+
+map3:
+    path:     /map3
+    defaults: { _controller: AppBundle:Default:map3 }
+
+map4:
+    path:     /map4
+    defaults: { _controller: AppBundle:Default:map4 }
 

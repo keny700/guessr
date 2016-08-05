@@ -25,16 +25,52 @@ class DefaultController extends Controller
         return $this->render('default/home.html.twig');
     }
 
-    public function missionAction(Request $request)
+    public function mission1Action(Request $request)
     {
         
 
-        return $this->render('default/mission.html.twig');
+        return $this->render('default/mission1.html.twig');
     }
-    public function mapAction(Request $request)
+    public function mission2Action(Request $request)
     {
         
 
-        return $this->render('default/map.html.twig');
+        return $this->render('default/mission2.html.twig');
+    }
+    public function mission3Action(Request $request)
+    {
+        
+
+        return $this->render('default/mission3.html.twig');
+    }
+    public function mission4Action(Request $request)
+    {
+        
+
+        return $this->render('default/mission4.html.twig');
+    }
+    public function map1Action(Request $request)
+    {
+        
+
+        return $this->render('default/map1.html.twig');
+    }
+    public function map2Action(Request $request)
+    {
+        
+
+        return $this->render('default/map2.html.twig');
+    }
+    public function map3Action(Request $request)
+    {
+        
+
+        return $this->render('default/map3.html.twig');
+    }
+    public function map4Action(Request $request)
+    {
+        
+
+        return $this->render('default/map4.html.twig');
     }
 }
