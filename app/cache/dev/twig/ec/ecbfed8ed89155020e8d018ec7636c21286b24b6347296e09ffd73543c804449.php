@@ -22,32 +22,32 @@ class __TwigTemplate_077c136267f0181ac17a8db556d83625072c4203be4da7957759dc90880
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7665bd16697ca7990593a5bd8abc5e7e1c65669821ca8bd2bc48715a329deca3 = $this->env->getExtension("native_profiler");
-        $__internal_7665bd16697ca7990593a5bd8abc5e7e1c65669821ca8bd2bc48715a329deca3->enter($__internal_7665bd16697ca7990593a5bd8abc5e7e1c65669821ca8bd2bc48715a329deca3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/mission1.html.twig"));
+        $__internal_6219ca6ae5dd9fd797c9e32cf35f4fc6aa6f676380891f8bd4b9729393b68d41 = $this->env->getExtension("native_profiler");
+        $__internal_6219ca6ae5dd9fd797c9e32cf35f4fc6aa6f676380891f8bd4b9729393b68d41->enter($__internal_6219ca6ae5dd9fd797c9e32cf35f4fc6aa6f676380891f8bd4b9729393b68d41_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/mission1.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7665bd16697ca7990593a5bd8abc5e7e1c65669821ca8bd2bc48715a329deca3->leave($__internal_7665bd16697ca7990593a5bd8abc5e7e1c65669821ca8bd2bc48715a329deca3_prof);
+        $__internal_6219ca6ae5dd9fd797c9e32cf35f4fc6aa6f676380891f8bd4b9729393b68d41->leave($__internal_6219ca6ae5dd9fd797c9e32cf35f4fc6aa6f676380891f8bd4b9729393b68d41_prof);
 
     }
 
     // line 3
     public function block_navbar($context, array $blocks = array())
     {
-        $__internal_aae33066a4e57f4fa7149a4e1d6e625c5c0b277d24580a93b137ae424d10fc60 = $this->env->getExtension("native_profiler");
-        $__internal_aae33066a4e57f4fa7149a4e1d6e625c5c0b277d24580a93b137ae424d10fc60->enter($__internal_aae33066a4e57f4fa7149a4e1d6e625c5c0b277d24580a93b137ae424d10fc60_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navbar"));
+        $__internal_cd22337b3e611ee27553017c8feb041f405b4e07af474bffa71b9f6050717e68 = $this->env->getExtension("native_profiler");
+        $__internal_cd22337b3e611ee27553017c8feb041f405b4e07af474bffa71b9f6050717e68->enter($__internal_cd22337b3e611ee27553017c8feb041f405b4e07af474bffa71b9f6050717e68_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "navbar"));
 
         $this->loadTemplate("navbar/navbar.html.twig", "default/mission1.html.twig", 3)->display($context);
         
-        $__internal_aae33066a4e57f4fa7149a4e1d6e625c5c0b277d24580a93b137ae424d10fc60->leave($__internal_aae33066a4e57f4fa7149a4e1d6e625c5c0b277d24580a93b137ae424d10fc60_prof);
+        $__internal_cd22337b3e611ee27553017c8feb041f405b4e07af474bffa71b9f6050717e68->leave($__internal_cd22337b3e611ee27553017c8feb041f405b4e07af474bffa71b9f6050717e68_prof);
 
     }
 
     // line 6
     public function block_body($context, array $blocks = array())
     {
-        $__internal_9d34d9ade6e757dc51525b98f8312a74860b202ccaba1c73a9609cc7a6816c96 = $this->env->getExtension("native_profiler");
-        $__internal_9d34d9ade6e757dc51525b98f8312a74860b202ccaba1c73a9609cc7a6816c96->enter($__internal_9d34d9ade6e757dc51525b98f8312a74860b202ccaba1c73a9609cc7a6816c96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_cc0d57380f12947244a748911d102d53284883ea608b0e80123086b7cf055a11 = $this->env->getExtension("native_profiler");
+        $__internal_cc0d57380f12947244a748911d102d53284883ea608b0e80123086b7cf055a11->enter($__internal_cc0d57380f12947244a748911d102d53284883ea608b0e80123086b7cf055a11_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
         echo "<div class=\"container-fluid mission\">
@@ -78,7 +78,7 @@ class __TwigTemplate_077c136267f0181ac17a8db556d83625072c4203be4da7957759dc90880
 \t\t\t\t\t<div class=\"col-md-7\"><a href=\"";
         // line 32
         echo $this->env->getExtension('routing')->getPath("map1");
-        echo "\"><input type=\"submit\" class=\"btn-lg btn-primary\" value=\"GO\"/>
+        echo "\"><input type=\"submit\" class=\"btn-lg btn-info\" value=\"GO\"/>
 \t\t\t\t</a></div>
 \t\t\t\t</div>
 
@@ -88,7 +88,7 @@ class __TwigTemplate_077c136267f0181ac17a8db556d83625072c4203be4da7957759dc90880
 
 ";
         
-        $__internal_9d34d9ade6e757dc51525b98f8312a74860b202ccaba1c73a9609cc7a6816c96->leave($__internal_9d34d9ade6e757dc51525b98f8312a74860b202ccaba1c73a9609cc7a6816c96_prof);
+        $__internal_cc0d57380f12947244a748911d102d53284883ea608b0e80123086b7cf055a11->leave($__internal_cc0d57380f12947244a748911d102d53284883ea608b0e80123086b7cf055a11_prof);
 
     }
 
@@ -138,7 +138,7 @@ class __TwigTemplate_077c136267f0181ac17a8db556d83625072c4203be4da7957759dc90880
 /* 			</div><div class="col-md-12">*/
 /* 					<div class="col-md-5">*/
 /* 					</div>*/
-/* 					<div class="col-md-7"><a href="{{ path('map1') }}"><input type="submit" class="btn-lg btn-primary" value="GO"/>*/
+/* 					<div class="col-md-7"><a href="{{ path('map1') }}"><input type="submit" class="btn-lg btn-info" value="GO"/>*/
 /* 				</a></div>*/
 /* 				</div>*/
 /* */

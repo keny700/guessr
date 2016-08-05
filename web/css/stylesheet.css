@@ -24,6 +24,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	background-repeat:no-repeat;
 	background-size: cover;
 	height:100%;
+	
 }
 
 .page_choix_missions h1{
@@ -49,7 +50,7 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	
 }
 
-/** Index
+/** Log
  */
 .rambo {
 	background: url(../img/mission.jpg);
@@ -76,9 +77,10 @@ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-op
 	
 }
 .theme {
-	border:solid green 2px;
+	border:solid rgb(96, 192, 220) 4px;
 	border-radius: 5px;
 	height: 300px;
+	font-family: 'Chrono';
 }
 .espace {
 	height: 100px;
